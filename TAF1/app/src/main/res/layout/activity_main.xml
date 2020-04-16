@@ -12,14 +12,32 @@
         android:id="@+id/ligne1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
-
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
         <ImageView
             android:id="@+id/facebook"
-            android:layout_width="7dp"
+            android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/facebook" />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Facebook"
+             android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
 
         <ImageView
             android:id="@+id/ebay"
@@ -27,25 +45,63 @@
             android:layout_height="50dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/ebay" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ebay"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
         <ImageView
             android:id="@+id/chrome"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/chrome" />
-
+            app:srcCompat="@drawable/chrome"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chrome"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
         <ImageView
             android:id="@+id/Apps"
-            android:layout_width="93dp"
+            android:layout_width="50dp"
             android:layout_height="50dp"
             app:srcCompat="@drawable/apps" />
-
-        <ImageView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AppIcon"
+                android:gravity="center"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+            <ImageView
             android:id="@+id/amazone"
             android:layout_width="50dp"
             android:layout_height="50dp"
             app:srcCompat="@drawable/amazone" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amazon"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -54,11 +110,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/ligne1"
         android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
         android:orientation="horizontal">
         <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+            android:layout_weight="2">
         <ImageView
             android:id="@+id/instagram"
             android:layout_width="50dp"
@@ -77,39 +135,70 @@
             android:orientation="vertical"
             android:layout_weight="2">
 
-        <ImageView
-            android:id="@+id/ikea"
+            <ImageView
+            android:id="@+id/trello"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ikea" />
+            app:srcCompat="@drawable/trello"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ikea"
+                android:text="Trello"
                 android:textColor="#FFFFFF"/>
         </LinearLayout>
-
-        <ImageView
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+            <ImageView
             android:id="@+id/playstore"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/googleplay" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Playstore"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
 
-        <ImageView
+            <ImageView
             android:id="@+id/gmail"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/gmail" />
-
-        <ImageView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gmail"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+            <ImageView
             android:id="@+id/fleur"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/fleur" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Garden"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -118,42 +207,96 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/ligne2"
         android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
         android:orientation="horizontal">
-
-        <ImageView
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+            <ImageView
             android:id="@+id/ocean"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/ocean" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SkyApp"
+                android:textColor="#FFFFFF"/>
 
-        <ImageView
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+
+            <ImageView
             android:id="@+id/netflix"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/netflix" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Netflix"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
 
-        <ImageView
+            <ImageView
             android:id="@+id/messenger"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/messenger" />
-
-        <ImageView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Messenger"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+            <ImageView
             android:id="@+id/map"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/map" />
-
-        <ImageView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maps"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+            <ImageView
             android:id="@+id/lune"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/lune" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="StarApp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -162,42 +305,94 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/ligne3"
         android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
         android:orientation="horizontal">
-
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
         <ImageView
-            android:id="@+id/playtore"
+            android:id="@+id/pluse"
             android:layout_width="49dp"
             android:layout_height="50dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/playstore" />
-
-        <ImageView
+            app:srcCompat="@drawable/pluse" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pluse"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+                <ImageView
             android:id="@+id/pinterest"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/pinterest" />
-
-        <ImageView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pinterest"
+                    android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+            <ImageView
             android:id="@+id/pierres"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/pierres" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="StoneApp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
 
-        <ImageView
+            <ImageView
             android:id="@+id/ouigo"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/ouigo" />
-
-        <ImageView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ouigo"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+            <ImageView
             android:id="@+id/oiseau"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/oiseau" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BirdApp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -207,6 +402,7 @@
         android:layout_below="@id/ligne4"
         android:layout_alignParentBottom="true"
         android:gravity="bottom"
+        android:layout_marginLeft="20dp"
         android:orientation="horizontal">
 
         <ImageView
