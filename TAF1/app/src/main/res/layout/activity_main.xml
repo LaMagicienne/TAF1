@@ -55,13 +55,27 @@
         android:layout_below="@id/ligne1"
         android:layout_marginTop="20dp"
         android:orientation="horizontal">
-
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
         <ImageView
             android:id="@+id/instagram"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/insta" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instagram"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
 
         <ImageView
             android:id="@+id/ikea"
@@ -69,6 +83,12 @@
             android:layout_height="50dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/ikea" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ikea"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
 
         <ImageView
             android:id="@+id/playstore"
